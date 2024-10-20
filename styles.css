@@ -1,0 +1,117 @@
+:root {
+    --primary-color: #ff6600;
+    --background-color: #f6f6ef;
+    --text-color: #333;
+    --secondary-color: #828282;
+    --border-color: #dbdbdb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+#liveUpdates {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#liveUpdates h2 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.post {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.post:hover {
+    transform: translateY(-3px);
+}
+
+.post h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.post-info {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.post a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+.comment {
+    border-left: 2px solid var(--border-color);
+    padding-left: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.comment p {
+    margin-bottom: 0.5rem;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #e55b00;
+}
+
+#loadMore {
+    display: block;
+    margin: 2rem auto;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+}
